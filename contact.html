@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kitchen Line Manufacturers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Specific CSS for the Contact Form layout -->
+    <style>
+        .contact-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-info h2 {
+            color: var(--copper);
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--navy-blue);
+            font-weight: 600;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: var(--copper);
+            color: var(--white);
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #a04526;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Kitchen Line Logo" class="logo">
+            <h2>Kitchen Line Manufacturers</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Products</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Get in Touch</h1>
+        
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Ready to build your kitchen?</h2>
+                <p><strong>Email:</strong> info@kitchenline.com</p>
+                <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+                <p><strong>Address:</strong> Your Business Address Here</p>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Inquiry Type</label>
+                    <input type="text" id="subject" name="subject" placeholder="e.g., New Commercial Build, Single Appliance Quote">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Kitchen Line Manufacturers. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

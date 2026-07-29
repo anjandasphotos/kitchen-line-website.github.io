@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Kitchen Line Manufacturers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Kitchen Line Logo" class="logo">
+            <h2>Kitchen Line Manufacturers</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Products</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Our Manufacturing Line</h1>
+        
+        <!-- PRODUCT GRID (Empty because JavaScript will fill it) -->
+        <div class="product-grid" id="product-grid">
+            <!-- The 79 products will automatically load right here -->
+        </div>
+    </main>
+<!-- COST ESTIMATOR SECTION -->
+<section class="estimator-section">
+    <h2>Project Cost Estimator</h2>
+    <p>Select your required equipment to get an instant baseline estimate.</p>
+    
+    <div class="estimator-form">
+        <div class="form-group">
+            <label for="cooking-range">Cooking Range:</label>
+            <select id="cooking-range">
+                <option value="0">None</option>
+                <option value="120000">4-Burner Gas Range (₹1,20,000)</option>
+                <option value="180000">6-Burner Gas Range (₹1,80,000)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="refrigeration">Refrigeration:</label>
+            <select id="refrigeration">
+                <option value="0">None</option>
+                <option value="85000">Single Door Undercounter (₹85,000)</option>
+                <option value="150000">Double Door Vertical (₹1,50,000)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="prep-table">Stainless Steel Prep Tables:</label>
+            <input type="number" id="prep-table" min="0" value="0" placeholder="Qty">
+            <span class="price-note">@ ₹15,000 each</span>
+        </div>
+
+        <button id="calculate-btn">Calculate Estimate</button>
+
+        <div id="estimate-result" class="result-box">
+            <h3>Estimated Total: <span id="total-cost">₹0</span></h3>
+            <p class="disclaimer">*This is a rough estimate. Contact us for a final quote.</p>
+        </div>
+    </div>
+</section>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Kitchen Line Manufacturers. All rights reserved.</p>
+    </footer>
+
+    <!-- This links to your JavaScript file -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
